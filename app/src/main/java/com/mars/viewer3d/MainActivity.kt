@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, View.OnTouchList
     var start1Y = 0.0f
     var rotM_old = FloatArray(16)
     override fun onTouch(v: View?, event: MotionEvent): Boolean {
-        when(event.action){
+        when(event.actionMasked){
             MotionEvent.ACTION_DOWN -> {
                 this.start0X = event.rawX
                 this.start0Y = event.rawY
